@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { darken, rgba } from "polished";
-import { color, typography } from "./shared/styles";
-import { easing } from "./shared/animation";
+import { color, typography } from "../../shared/styles";
+import { easing } from "../../shared/animation";
 
 const Text = styled.span`
   display: inline-block;
@@ -369,22 +369,23 @@ export function Button({
 Button.propTypes = {
   isLoading: PropTypes.bool,
   /**
-   When a button is in the loading state you can supply custom text
+    When a button is in the loading state you can supply custom text
   */
   loadingText: PropTypes.node,
   /**
-   Buttons that have hrefs should use <a> instead of <button>
+    Buttons that have hrefs should use <a> instead of <button>
   */
   isLink: PropTypes.bool,
   children: PropTypes.node.isRequired,
   appearance: PropTypes.oneOf(Object.values(APPEARANCES)),
   isDisabled: PropTypes.bool,
   /**
-   Prevents users from clicking on a button multiple times (for things like payment forms)
+    Prevents users from clicking on a button multiple times (for things like
+      payment forms)
   */
   isUnclickable: PropTypes.bool,
   /**
-   Buttons with icons by themselves have a circular shape
+    Buttons with icons by themselves have a circular shape
   */
   containsIcon: PropTypes.bool,
   size: PropTypes.oneOf(Object.values(SIZES)),

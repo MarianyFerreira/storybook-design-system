@@ -1,6 +1,6 @@
 {
   "*.js": [
     "eslint --fix src",
-    "prettier --write \"{src}/**/*.js\""
+    "prettier --write src"
   ]
 }

@@ -1,7 +1,7 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 import { withKnobs, select, boolean } from '@storybook/addon-knobs';
 
-import { Avatar } from './Avatar';
+import { Avatar } from '../../components/atoms/Avatar';
 
 <Meta title="Design System|Avatar" component={Avatar} />
 
@@ -9,7 +9,9 @@ import { Avatar } from './Avatar';
 
 ## Displays an image that represents a user or organization
 
-Use an avatar for attributing actions or content to specific users. The user’s name should _always_ be present when using Avatar – either printed beside the avatar or in a tooltip.
+Use an avatar for attributing actions or content to specific users. The user’s
+name should _always_ be present when using Avatar – either printed beside the
+avatar or in a tooltip.
 
 <Preview withToolbar>
   <Story name="standard">
@@ -25,7 +27,11 @@ Use an avatar for attributing actions or content to specific users. The user’s
 
 ## Usage
 
-Avatar is used to represent a person or an organization. By default the avatar shows an image and gracefully falls back to the first initial of the username. While hydrating the component you may find it useful to render a skeleton template to indicate that Avatar is awaiting data. Avatars can be grouped with the AvatarList component.
+Avatar is used to represent a person or an organization. By default the avatar
+shows an image and gracefully falls back to the first initial of the username.
+While hydrating the component you may find it useful to render a skeleton
+template to indicate that Avatar is awaiting data. Avatars can be grouped with
+the AvatarList component.
 
 ### Sizes
 
@@ -58,7 +64,8 @@ Avatar is used to represent a person or an organization. By default the avatar s
 
 ### Default Values
 
-When no image is supplied to the `src` prop, Avatar displays initials. Avatar should be used sparingly in situations without access to images.
+When no image is supplied to the `src` prop, Avatar displays initials. Avatar
+should be used sparingly in situations without access to images.
 
 <Story name="initials">
   <div>

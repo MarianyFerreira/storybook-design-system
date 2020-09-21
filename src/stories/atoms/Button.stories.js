@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { action } from "@storybook/addon-actions";
 
-import { Button } from "./Button";
-import { Icon } from "./Icon";
-import { StoryLinkWrapper } from "./StoryLinkWrapper";
+import { Button } from "../../components/atoms/Button";
+import { Icon } from "../../components/atoms/Icon";
+import { StoryLinkWrapper } from "../StoryLinkWrapper";
 
 const CustomButton = styled.button`
   border: 1px solid green;
