@@ -1,0 +1,30 @@
+# Ignore artifacts:
+dist
+coverage
+node_modules
+.vscode
+
+# Ignore all yml files:
+*.yml
+
+# Ignore all html files:
+*.html
+
+# Ignore all mdx files:
+*.mdx
+
+# Ignore all Package files:
+package.json
+package.lock
+yarn.lock
+
+# Ignore all config files:
+.eslintrc.json
+.eslintignore
+.gitignore
+.prettierrc
+.prettierignore
+
+# Ignore all docs files:
+CHANGELOG.md
+README.md
